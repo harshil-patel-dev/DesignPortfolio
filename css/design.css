@@ -1,0 +1,19 @@
+
+body{
+    scroll-behavior: smooth;
+}
+.headTitle{
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 14pt;
+    margin-top: 20px;
+}
+
+#homecontainer{
+    background-image: url(images/Halftones.jpg);max-height: 95vh;text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    
+}
