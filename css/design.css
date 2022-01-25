@@ -1,19 +1,83 @@
-
-body{
+body {
     scroll-behavior: smooth;
+    
 }
-.headTitle{
+
+.headTitle {
     font-family: 'Ibarra Real Nova', serif;
     font-size: 14pt;
     margin-top: 20px;
 }
 
-#homecontainer{
-    background-image: url(images/Halftones.jpg);max-height: 95vh;text-align: center;
+
+.about-container {
+
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 15%;
+    margin-left: 15%;
+
 }
 
+.about-flex-item-left {
+    flex: 40%;
+    margin-top: 5%;
+    
+}
 
-@media only screen and (max-width: 600px) {
+.about-flex-item-right {
+    flex: 60%;
+    margin: 5%;
+    padding-left: 5%;
+    padding-right: 2%;
+    
+}
+
+.aboutImage {
+    width: 450px;
+    max-height: 450px;
+    position: relative;
+    -webkit-animation:glide 2s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes glide  {
+    from {
+       left:0px;
+       top:0px;
+    }
+    
+    to {
+       left:0px;
+       top:20px;
+    }
+ 
+ }
+
+.divBG{
+    height: 450px; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+}
+
+.aboutText {
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 13pt;
+    text-align: left;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .about-container{
+        flex-direction:column-reverse;
+        margin: 10%;
+    }
 
     
+    .about-flex-item-left{
+        margin: 2%;
+    }
+
 }
