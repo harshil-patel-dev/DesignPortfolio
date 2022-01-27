@@ -12,10 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&family=Manrope:wght@200&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@250&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
 </head>
 
+
 <body>
+    
 
     <div class="container-fluid p-3" style="background-image: url(images/Halftones.jpg);max-height:max-content;text-align: center;">
         <div class="row">
@@ -60,8 +65,81 @@
         </div>
 
     </div>
-    <hr style="border:1px dashed lightgrey;margin:0 30% ;"/>
 
+
+    <hr style="border:1px dashed #F4F4F4;margin:0 20% ;"/><br/>
+
+    <h3 class="section-header">Skills</h3>
+    <div id="skills" class="skill-container">
+        <div id="skill1" class="skill-flex-item" onmouseover="changeImage();">
+            <div class="skill-item-container">
+                <div style="flex-grow: 3;text-align: center;margin: 4% ">
+                    <img class="imgSkill" src="images/skill1.jpg" style="width:100px;" />
+                    
+                </div>
+                <div style="flex-grow: 7;text-align: left;margin: 3% ;">
+                    <h4>HTML/CSS </h4>
+                    <p style="">
+                        With over four years of experience in front-end design, I use HTML/CSS to bring your businesses personality to the forefront, creating highly customized and immersive web experiences.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="skill-flex-item">
+            <div class="skill-item-container">
+                <div style="flex-grow: 3;text-align: center;margin: 4% ">
+                    <img src="images/skill2.jpg" style="width:100px;" />
+                </div>
+                <div style="flex-grow: 7;text-align: left;margin: 3% ;">
+                    <h4>Editing & Motion Graphics </h4>
+                    <p>
+                        My background in videography means I'm proficient in video editing softwares such as Adobe Premiere, Adobe After Effects, and Final Cut Pro. On my free time, you'll find me brushing up on my motion graphic skills.
+                    </p>
+                </div>
+            </div>    
+        </div>
+
+        <div class="skill-flex-item">
+            <div class="skill-item-container">
+                <div style="flex-grow: 3;text-align: center;margin: 4% ">
+                    <img src="images/skill3.jpg" style="width:100px;" />
+                </div>
+                <div style="flex-grow: 7;text-align: left;margin: 3% ;">
+                    <h4>Illustration </h4>
+                    <p style="">
+                        I am well-versed in all Adobe softwares such as XD, Photoshop and Illustrator, and often find myself combining my illustration skills with design.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="skill-flex-item">
+            <div class="skill-item-container">
+                <div style="flex-grow: 3;text-align: center;margin: 4% ">
+                    <img src="images/skill4.jpg" style="width:100px;" />
+                </div>
+                <div style="flex-grow: 7;text-align: left;margin: 3% ;">
+                    <h4>Visual Builders & Platforms</h4>
+                    <p>
+                        I am a quick learner when it comes to learning new platforms. I have experience in online visual builders such as Shopify, Unbounce, Ceros, WordPress, and Flexitive. I'm also currently learning webflow.
+                    </p>
+                </div>
+            </div>    
+        </div>
+
+    </div>
+
+    <script>
+        function changeImage(){
+            if(document.getElementById("skill1"))
+            {
+               document.getElementById('skill1').children.src="./images/skill1hover.gif";
+            }
+        }
+    </script>
+
+    
 </body>
 
 </html>

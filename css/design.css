@@ -3,6 +3,19 @@ body {
     
 }
 
+h4{
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height:25px;
+}
+
+p{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    font-weight: 400;
+}
 .headTitle {
     font-family: 'Ibarra Real Nova', serif;
     font-size: 14pt;
@@ -41,6 +54,26 @@ body {
     -webkit-animation:glide 2s ease-in-out alternate infinite;
 }
 
+
+
+.skill-container {
+
+    display: flex;
+    text-align: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    flex-wrap: wrap;
+}
+
+.section-header{
+    display: block;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 3% 0%;
+}
+
 @-webkit-keyframes glide  {
     from {
        left:0px;
@@ -61,6 +94,23 @@ body {
     background-position:center;
 }
 
+.skill-flex-item {
+    flex: 50%;
+    padding:3%;
+  }
+  
+.skill-flex-item .imghover{
+    z-index: 99;
+}
+
+
+.skill-item-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+
 .aboutText {
 
     font-family: 'Manrope', sans-serif;
@@ -75,9 +125,16 @@ body {
         margin: 10%;
     }
 
+    .skill-container {
+        margin: 5%;
+    }
     
     .about-flex-item-left{
         margin: 2%;
     }
+
+    .skill-flex-item {
+        flex: 100%;
+      }
 
 }
