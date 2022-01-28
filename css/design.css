@@ -1,21 +1,50 @@
 body {
     scroll-behavior: smooth;
-    
+
 }
 
-h4{
+#navbarID {
+    background-color: white;
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1) !important;
+    transition: top 0.3s;
+    z-index: 10;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 1.1rem !important;
+}
+
+
+
+#navbarID a:hover {
+
+    color: skyblue;
+}
+
+h4 {
     font-family: 'Ibarra Real Nova', serif;
     font-size: 1.2rem;
     font-weight: 500;
-    line-height:25px;
+    line-height: 25px;
 }
 
-p{
+h2 {
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: 700;
+    line-height: 38px;
+    color: white;
+}
+
+p {
     font-family: 'Manrope', sans-serif;
     font-size: 1rem;
+    display: block;
+
     line-height: 23px;
     font-weight: 400;
 }
+
 .headTitle {
     font-family: 'Ibarra Real Nova', serif;
     font-size: 14pt;
@@ -36,7 +65,7 @@ p{
 .about-flex-item-left {
     flex: 40%;
     margin-top: 5%;
-    
+
 }
 
 .about-flex-item-right {
@@ -44,16 +73,22 @@ p{
     margin: 5%;
     padding-left: 5%;
     padding-right: 2%;
-    
+
 }
 
 .aboutImage {
     width: 450px;
     max-height: 450px;
     position: relative;
-    -webkit-animation:glide 2s ease-in-out alternate infinite;
+    -webkit-animation: glide 2s ease-in-out alternate infinite;
 }
 
+.cups{
+    width: 400px;
+    position: relative;
+    -webkit-animation: glide 2s ease-in-out alternate infinite;
+
+}
 
 
 .skill-container {
@@ -65,51 +100,51 @@ p{
     flex-wrap: wrap;
 }
 
-.section-header{
+.section-header {
     display: block;
     font-family: 'Ibarra Real Nova', serif;
     font-size: 1.9rem;
     font-weight: 700;
     text-align: center;
-    margin: 3% 0%;
+    margin: 3% 0% 1% 0%;
 }
 
-@-webkit-keyframes glide  {
+@-webkit-keyframes glide {
     from {
-       left:0px;
-       top:0px;
+        left: 0px;
+        top: 0px;
     }
-    
-    to {
-       left:0px;
-       top:20px;
-    }
- 
- }
 
-.divBG{
-    height: 450px; 
+    to {
+        left: 0px;
+        top: 20px;
+    }
+
+}
+
+.divBG {
+    height: 450px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position:center;
+    background-position: center;
 }
 
 .skill-flex-item {
     flex: 50%;
-    padding:3%;
-  }
-  
-.skill-flex-item .imghover{
-    z-index: 99;
+    padding: 3%;
 }
 
 
-.skill-item-container{
+
+
+.skill-item-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    
+
 }
+
+
 
 .aboutText {
 
@@ -118,23 +153,76 @@ p{
     text-align: left;
 }
 
-@media only screen and (max-width: 800px) {
+#chips {
+    color: black;
+    background-color: #F5F3F0;
+    font-size: 10pt;
+    font-weight: lighter;
+}
 
-    .about-container{
-        flex-direction:column-reverse;
+
+#cardItem h3 {
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 25px;
+}
+
+#cardItem p {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.buttonCard {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.8rem !important;
+    font-weight: 400 !important;
+    text-decoration: none;
+    color: white;
+    
+    background-color: #0586ca;
+}
+
+.buttonCard:hover{
+    background-color: #0847A0;
+    color: white;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 850px) {
+
+    .about-container {
+        flex-direction: column-reverse;
         margin: 10%;
     }
 
     .skill-container {
         margin: 5%;
     }
-    
-    .about-flex-item-left{
+
+    .about-flex-item-left {
         margin: 2%;
     }
 
     .skill-flex-item {
         flex: 100%;
-      }
+    }
+
+    #navbarID {
+        display: none;
+    }
+
+    .card {
+        margin: 5%;
+        width: 100%;
+        padding: 0px;
+    }
+
+
 
 }
