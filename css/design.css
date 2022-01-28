@@ -78,7 +78,7 @@ p {
 
 .aboutImage {
     width: 450px;
-    max-height: 450px;
+    height: 450px;
     position: relative;
     -webkit-animation: glide 2s ease-in-out alternate infinite;
 }
@@ -124,6 +124,7 @@ p {
 
 .divBG {
     height: 450px;
+    
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -188,10 +189,35 @@ p {
     color: white;
 }
 
+.footerLinks{
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 25px;
+    color: whitesmoke;
+}
+
+.footerLinks.hover{
+    text-decoration: none;
+}
+
+.animateHover img:hover{
+    transform: rotate(-10deg);
+}
+
+.animateHover a:hover{
+    color:rgb(255, 242, 217);
+}
 
 
 
+@media only screen and (max-width: 1300px) {
 
+
+    .skill-flex-item {
+        flex: 100%;
+    }
+}
 
 
 @media only screen and (max-width: 850px) {
@@ -209,20 +235,26 @@ p {
         margin: 2%;
     }
 
-    .skill-flex-item {
-        flex: 100%;
-    }
-
     #navbarID {
         display: none;
     }
 
-    .card {
-        margin: 5%;
-        width: 100%;
-        padding: 0px;
+    .aboutImage{
+        margin-top: 20px;
     }
 
-
+    
 
 }
+
+
+@media only screen and (max-width: 350px) {
+
+    .divBG{
+        width: 250px;
+        height: 250px;
+    }
+    
+
+}
+

@@ -22,14 +22,14 @@
 
 <body>
 
-
+    <span id="top"></span>
     <div id="navbarID" class="container-fluid">
         <header class="d-flex justify-content-center py-1">
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link text-black">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-black">Skills</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-black">Porfolio</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-black">Contact</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link text-black">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link text-black">Skills</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link text-black">Porfolio</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link text-black">Contact</a></li>
 
             </ul>
         </header>
@@ -95,10 +95,10 @@
     </div>
 
 
-    <hr style="border:1px dashed #F4F4F4;margin:0 20% ;" /><br />
+    <hr id="skills" style="border:1px dashed #F4F4F4;margin:0 20% ;" /><br />
 
-    <h3 class="section-header">Skills</h3>
-    <div id="skills" class="skill-container">
+    <h3  class="section-header">Skills</h3>
+    <div  class="skill-container">
         <div id="skill1" class="skill-flex-item" onmouseover="mouseOn(1)" onmouseleave="mouseOut(1)">
             <div class="skill-item-container">
                 <div style="flex-grow: 3;text-align: center;margin: 4% ">
@@ -165,6 +165,7 @@
     </div>
 
     <!-- Portfolio Section -->
+    <span id="portfolio"></span>
     <div class="container-fluid mt-3 p-3" style="background-image: url(images/Halftones.jpg);">
         <h3 class="section-header">Portfolio</h3>
         <p style="text-align: center;">My design experience ranges from web design, branding, video, and more.<br />
@@ -306,7 +307,7 @@
                 <!-- Card 3 END -->
             </div>
             <!-- Card Row 1 End  -->
-
+            <br class="d-lg-none"/>
 
             <!-- Card Row 2 Start -->
             <div class="row row-cols-1 row-cols-xl-4 justify-content-center mx-xl-3 mx-sm-1 ">
@@ -442,7 +443,7 @@
             </div>
             <!-- Card Row 2 End  -->
 
-
+            <br class="d-lg-none"/>
             <!-- Card Row 3 Start -->
             <div class="row row-cols-1 row-cols-xl-4 justify-content-center mx-xl-3 mx-sm-1">
 
@@ -580,31 +581,74 @@
     <!-- Portfolio End -->
 
 
-    <div class="container-fluid justify-content-center" style="background-color:#383933;">
+    <span id="contact"></span>
+    <div class="container-fluid justify-content-center m-auto" style="background-color:#383933;">
 
-        <div class="container-fluid">
-            <div class="row justify-content-center p-5 ">
-                <div class="col  m-4">
-                    <div class="row text-start">
+        <div class="container p-5">
+            <div class="row row-cols-1 row-cols-xl-2  p-sm-2 p-md-5 d-flex justify-content-center ">
+                <div class="col">
+                    <div class="row mb-5">
                         <h2> You can’t leave a tea party <br/> without a cup of tea, you know? </h2>
 
                     </div>
 
                     <div class="row">
-                        <div class="col-10">
-                        <img class="cups" src="images/Floating-Teacups.jpg"  /></div>
+                        <div class="col-10 mb-sm-4">
+                        <img class="cups img-fluid" src="images/Floating-Teacups.png"  /></div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="row">
-                        <p class="text-white">
-
-                            Leaving so soon? I feel like we’ve barely scratched the surface! I haven’t had a chance to tell you about my smokey bear obsession, my love for poutine, or my bad genre film collection!
+               
+                <div class="col mt-sm-5 mt-md-0">
+                    <div class="row mt-2">
+                        <p  style="color: whitesmoke;font-size: 11pt;">
                             
+                            Leaving so soon? I feel like we’ve barely scratched the surface! I haven’t had a chance to tell you about my smokey bear obsession, my love for poutine, or my bad genre film collection!
+                            <br/><br/>
                             If you have a project for me or simply want to get to know me better, why don’t you invite me out for a cup of tea?
                             </p>
                     </div>
+
+                    <div class="row d-flex animateHover my-2">
+                        <div class="col-2 me-3">
+                            <img  style="width: 80px;" src="images/Email-Key.jpg" />
+                        </div>
+                        <div class="col-8">
+                            <a href="mailto:" class="badge text-start" style="font-family: 'Ibarra Real Nova', serif;
+                            font-size: 1.2rem;">hello@lebonsiu.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex animateHover my-2">
+                        <div class="col-2 me-3">
+                            <img  style="width: 80px;" src="images/LinkedIn-Key.jpg" />
+                        </div>
+                        <div class="col-8 ">
+                            <a href="https://www.linkedin.com/in/lebon-siu/" class="badge text-start" style="font-family: 'Ibarra Real Nova', serif;
+                            font-size: 1.2rem;"> 
+                                LinkedIn
+                                </a>
+                        </div>
+
+                    </div>
+
+                    <div class="row d-flex animateHover my-2">
+                        <div class="col-2 me-3">
+                            <img  style="width: 80px;" src="images/BH-Key.jpg" />
+                        </div>
+                        <div class="col-8">
+                            <a href="https://www.behance.net/lebon-siu" class="badge text-start" style="font-family: 'Ibarra Real Nova', serif;
+                            font-size: 1.2rem;"> 
+                               Behance
+                                </a>
+                        </div>
+
+                    </div>
                 </div>
+            </div>
+            <div class="row row-cols-1 d-flex justify-content-center mt-3 text-center">
+                <div class="col"><p style="color:whitesmoke; font-size: 12pt;">Copyright ©2022 Lebon Siu. 
+                    <a style="color:whitesmoke;" href="#top"> Back to Top ↑ </a></p></div>
             </div>
 
         </div>
